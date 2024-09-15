@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Anas Aslam's Portfolio</title>
+    <title>Muhammad Anas Aslam - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="video-background">
@@ -27,11 +27,14 @@
         <h2 style="color: #ff9900;">Aspiring Full-Stack Developer</h2>
     </section>
 
-    <div class="container" style="padding: 20px;">
-        <section id="about" class="section about-me">
-            <h2 style="color: #ff9900;">About Me</h2>
-            <p style="color: #f0f0f0;">I am Muhammad Anas Aslam, currently a 5th-semester Computer Science student. I'm working on developing my skills as a full-stack web and mobile developer, with a focus on solving LeetCode problems to enhance my coding abilities. Outside of my academic pursuits, I'm deeply passionate about history, often exploring journals and historical content. I also enjoy photography and have played football and cricket during my school years.</p>
-        </section>
+    <section id="about" class="section about-me">
+        <h2 style="color: #ff9900;">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>I am Muhammad Anas Aslam, currently a 5th-semester Computer Science student. I'm working on developing my skills as a full-stack web and mobile developer, with a focus on solving LeetCode problems to enhance my coding abilities. Outside of my academic pursuits, I'm deeply passionate about history, often exploring journals and historical content. I also enjoy photography and have played football and cricket during my school years.</p>
+            </div>
+        </div>
+    </section>
         
         <section id="skills" class="section">
             <h2 style="color: #ff9900;">Languages</h2>
@@ -61,88 +64,134 @@
         
         <section id="projects" class="section">
             <h2 style="color: #ff9900;">Projects</h2>
-            <ul class="projects-list" style="color: #f0f0f0;">
-                <li>
-                    <h3 style="color: #ffffff;">Chess</h3>
-                    <p>Developed a replica of the classic chess game, focusing on implementing core game mechanics and rules using Object-Oriented Programming (OOP) principles.</p>
-                    <p><strong>Date:</strong> April 2023</p>
-                    <p><strong>Programming Language:</strong> C++</p>
-                </li>
-                <li>
-                    <h3 style="color: #ffffff;">Shogi</h3>
-                    <p>Created a replica of the traditional Japanese game of shogi, utilizing a procedural programming approach to simulate gameplay and move logic.</p>
-                    <p><strong>Date:</strong> December 2022</p>
-                    <p><strong>Programming Language:</strong> C++</p>
-                </li>
-                <li>
-                    <h3 style="color: #ffffff;">Paintbrush</h3>
-                    <p>Built a paintbrush application allowing users to draw and create digital art, with features like color selection and brush size adjustments, using Python.</p>
-                    <p><strong>Date:</strong> May 2023</p>
-                    <p><strong>Programming Language:</strong> Python</p>
-                </li>
-                <li>
-                    <h3 style="color: #ffffff;">Neo4j Database Replica</h3>
-                    <p>Developed a small-scale replica of a Neo4j database to understand graph database concepts and implement basic operations using C++.</p>
-                    <p><strong>Date:</strong> December 2024</p>
-                    <p><strong>Programming Language:</strong> C++</p>
-                </li>
-                <li>
-                    <h3 style="color: #ffffff;">Gomoku</h3>
-                    <p>Created a Gomoku game, focusing on game mechanics and AI strategies using C++.</p>
-                    <p><strong>Date:</strong> October 2022</p>
-                    <p><strong>Programming Language:</strong> C++</p>
-                </li>
-            </ul>
+            <div class="projects-container">
+                <div class="project-box">
+                    <div class="project-header" onclick="toggleProject('chess-content')">
+                        <h3>Chess</h3>
+                    </div>
+                    <div id="chess-content" class="project-content">
+                        <p>Developed a replica of the classic chess game, focusing on implementing core game mechanics and rules using Object-Oriented Programming (OOP) principles.</p>
+                        <p><strong>Date:</strong> April 2023</p>
+                        <p><strong>Programming Language:</strong> C++</p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-header" onclick="toggleProject('shogi-content')">
+                        <h3>Shogi</h3>
+                    </div>
+                    <div id="shogi-content" class="project-content">
+                        <p>Created a replica of the traditional Japanese game of shogi, utilizing a procedural programming approach to simulate gameplay and move logic.</p>
+                        <p><strong>Date:</strong> December 2022</p>
+                        <p><strong>Programming Language:</strong> C++</p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-header" onclick="toggleProject('paintbrush-content')">
+                        <h3>Paintbrush</h3>
+                    </div>
+                    <div id="paintbrush-content" class="project-content">
+                        <p>Built a paintbrush application allowing users to draw and create digital art, with features like color selection and brush size adjustments, using Python.</p>
+                        <p><strong>Date:</strong> May 2023</p>
+                        <p><strong>Programming Language:</strong> Python</p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-header" onclick="toggleProject('neo4j-content')">
+                        <h3>Neo4j Database Replica</h3>
+                    </div>
+                    <div id="neo4j-content" class="project-content">
+                        <p>Developed a small-scale replica of a Neo4j database to understand graph database concepts and implement basic operations using C++.</p>
+                        <p><strong>Date:</strong> December 2024</p>
+                        <p><strong>Programming Language:</strong> C++</p>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="project-header" onclick="toggleProject('gomoku-content')">
+                        <h3>Gomoku</h3>
+                    </div>
+                    <div id="gomoku-content" class="project-content">
+                        <p>Created a Gomoku game, focusing on game mechanics and AI strategies using C++.</p>
+                        <p><strong>Date:</strong> October 2022</p>
+                        <p><strong>Programming Language:</strong> C++</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="education" class="section">
             <h2 style="color: #ff9900;">Education</h2>
-            <div>
-                <h3>Matriculation</h3>
-                <p><strong>Institute:</strong> Customs Public School</p>
-                <p><strong>Program:</strong> Scien</p>
-                <p><strong>Graduating Year:</strong> 2020</p>
-            </div>
-
-            <div>
-                <h3>Intermediate</h3>
-                <p><strong>Institute:</strong> Unique College for Boys</p>
-                <p><strong>Program:</strong> Pre Engineering</p>
-                <p><strong>Graduating Year:</strong> 2022</p>
-            </div>
-
-            <div>
-                <h3>Graduation</h3>
-                <p><strong>Institute:</strong> Information Technology University</p>
-                <p><strong>Program:</strong> Bachelor's in Computer Science</p>
-                <p><strong>Graduating Year:</strong> 2026</p>
+            <div class="education-container">
+                <div class="education-box">
+                    <div class="education-header" onclick="toggleContent('matriculation-content')">
+                        <h3>Matriculation</h3>
+                    </div>
+                    <div id="matriculation-content" class="education-content">
+                        <p><strong>Institute:</strong> Customs Public School</p>
+                        <p><strong>Program:</strong> Science</p>
+                        <p><strong>Graduating Year:</strong> 2020</p>
+                    </div>
+                </div>
+        
+                <div class="education-box">
+                    <div class="education-header" onclick="toggleContent('intermediate-content')">
+                        <h3>Intermediate</h3>
+                    </div>
+                    <div id="intermediate-content" class="education-content">
+                        <p><strong>Institute:</strong> Unique College for Boys</p>
+                        <p><strong>Program:</strong> Pre Engineering</p>
+                        <p><strong>Graduating Year:</strong> 2022</p>
+                    </div>
+                </div>
+        
+                <div class="education-box">
+                    <div class="education-header" onclick="toggleContent('graduation-content')">
+                        <h3>Graduation</h3>
+                    </div>
+                    <div id="graduation-content" class="education-content">
+                        <p><strong>Institute:</strong> Information Technology University</p>
+                        <p><strong>Program:</strong> Bachelor's in Computer Science</p>
+                        <p><strong>Graduating Year:</strong> 2026</p>
+                    </div>
+                </div>
             </div>
         </section>
+        
 
-        <section id="awards" class="section">
-            <h2 style="color: #ff9900;">Awards</h2>
-            <ul class="awards-list" style="color: #f0f0f0;">
-                <li>
+        <section id="competitions" class="section">
+            <h2 style="color: #ff9900;">Competitions</h2>
+            <div class="competitions-container">
+                <div class="competition-box">
                     <h3 style="color: #ffffff;">CodeRush 2024</h3>
                     <p>Participated in CodeRush 2024 and secured 6th position out of over 50 teams.</p>
-                </li>
-                <li>
+                </div>
+                <div class="competition-box">
                     <h3 style="color: #ffffff;">GDSC Coding Competitions</h3>
-                    <p>Participated in various Google Developer Student Club (GDSC) coding competitions.</p>
-                </li>
-            </ul>
+                    <p>Participated in Google Developer Student Club (GDSC) coding competitions such as Coderush 2023 and more.</p>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="section">
             <h2 style="color: #ff9900;">Contact</h2>
-            <p style="color: #f0f0f0;"><strong>Email:</strong> <a href="mailto:anasaslam10904@gmail.com" style="color: #ff9900;">anasaslam10904@gmail.com</a></p>
-            <p style="color: #f0f0f0;"><strong>GitHub:</strong> <a href="https://github.com/anasaslam109" target="_blank" style="color: #ff9900;">anasaslam109</a></p>
-            <p style="color: #f0f0f0;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammad-an-aslam" target="_blank" style="color: #ff9900;">Muhammad Anas Aslam</a></p>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <img src="gmail.jpg"Email Icon" class="contact-icon">
+                    <p><strong>Email:</strong> <a href="mailto:anasaslam10904@gmail.com" style="color: #ff9900;">anasaslam10904@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <img src="git.jpg" alt="GitHub Icon" class="contact-icon">
+                    <p><strong>GitHub:</strong> <a href="https://github.com/anasaslam109" target="_blank" style="color: #ff9900;">anasaslam109</a></p>
+                </div>
+                <div class="contact-card">
+                    <img src="ldn.jpg" alt="LinkedIn Icon" class="contact-icon">
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammad-anas-aslam-3096b5327/" target="_blank" style="color: #ff9900;">Muhammad Anas Aslam</a></p>
+                </div>
+            </div>
         </section>
-    </div>
 
     <footer style="text-align: center; padding: 10px; background-color: rgba(0, 0, 0, 0.8);">
         <p style="color: #ffffff;">&copy; 2024 Muhammad Anas Aslam. All rights reserved.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
