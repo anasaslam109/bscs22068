@@ -61,13 +61,14 @@ header nav a:hover {
 
 .skills-container {
     display: flex;
+    gap: 70px;
     flex-wrap: wrap;
 }
 .skill {
     position: relative;
     margin: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 .skill img {
     width: 100%;
@@ -113,4 +114,109 @@ footer {
 
 footer p {
     color: #ffffff;
+}
+
+.about-me {
+    text-align: center; 
+    padding: 20px;
+}
+
+.about-text {
+    color: #f0f0f0;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.education-container {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.education-box {
+    flex: 1;
+    min-width: 200px; 
+    background: #2c2c2c; 
+    color: #ffffff; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.education-box h3 {
+    color: #ff9900; 
+}
+
+.education-box p {
+    margin: 5px 0; 
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.project-box {
+    background: #2c2c2c; 
+    color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+}
+
+.project-header {
+    padding: 15px;
+    background: #333333; 
+    cursor: pointer;
+}
+
+.project-header h3 {
+    margin: 0;
+    color: #ff9900; 
+}
+
+.project-content {
+    padding: 15px;
+    display: none; 
+}
+
+.project-content p {
+    margin: 5px 0; 
+}
+
+.competitions-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.competition-box {
+    background: #2c2c2c; 
+    color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.contact-card {
+    background: #2c2c2c;
+    color: #f0f0f0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
 }
