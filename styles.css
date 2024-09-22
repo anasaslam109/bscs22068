@@ -116,15 +116,35 @@ footer p {
     color: #ffffff;
 }
 
-.about-me {
-    text-align: center; 
+.about-title {
+    color: #ff9900;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 .about-text {
-    color: #f0f0f0;
-    max-width: 800px; 
-    margin: 0 auto; 
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.about-text p {
+    margin: 0;
 }
 
 .education-container {
@@ -219,4 +239,55 @@ footer p {
 .contact-icon {
     width: 30px;
     height: 30px;
+}
+
+.section-title {
+    color: #ff9900;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills-box {
+    flex: 1;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skills-heading {
+    color: #ffffff;
+}
+
+.skills-list {
+    color: #f0f0f0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+#main-name {
+    text-align: center;
+}
+
+.main-name-title {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif; /* You can use other system fonts here */
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Makes the text bold */
+    margin: 0;
+}
+
+.main-name-subtitle {
+    color: #ff9900;
+    font-family: 'Arial', sans-serif; /* You can use other system fonts here */
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: normal; /* Regular weight for subtitle */
+    margin: 0;
 }
